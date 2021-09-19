@@ -1,0 +1,32 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: unset;
+}
+
+a {
+  text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+html{
+    &[dir="rtl"]{
+        body{
+            font-family: 'Cairo', sans-serif;
+        }
+    }
+    &[dir="ltr"]{
+        body{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+}
+
+
