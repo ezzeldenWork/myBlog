@@ -1,10 +1,20 @@
 :root {
   --white_color: #fff;
-  --gray_color: #ddd;
   --black_color: #000;
-  --min-color:#80207c;
-  --minDark-color:#4b2144;
-  --sub-color:#af3355;
-  --dark-color:#1e1230;
-  --yellow-color:#f4b93f;
+  --min_color: #003B73;
+  --sub_color: #60A3D9;
+  --middel_color:#0074B7;
+  --light_color:#BFD7ED;
+  --gray_color:#f8f6f6;
+
+
+
+  // backGround
+  --back_gradied:radial-gradient(circle, rgba(40,94,143,1) 0%, rgba(0,59,115,1) 100%);
+
+
+  --en_word:'Josefin Sans', sans-serif;
+  --ar_word:'Cairo', sans-serif;
+
 }
+

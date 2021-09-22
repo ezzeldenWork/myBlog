@@ -19,14 +19,17 @@ a {
 html{
     &[dir="rtl"]{
         body{
-            font-family: 'Cairo', sans-serif;
+            font-family: var(--ar_word);
         }
     }
     &[dir="ltr"]{
         body{
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: var(--en_word);
         }
     }
 }
 
 
+.en_word{
+    font-family: var(--en_word);
+}

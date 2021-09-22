@@ -1,7 +1,7 @@
 .ez_header{
   position: relative;
   padding: 20px 0;
-  border-bottom: 1px solid var(--gray_color);
+  border-bottom: 1px solid var(--middel_color);
   z-index: 2;
   .logo_box{
     a{
@@ -21,10 +21,10 @@
         a{
           font-size: 20px;
           font-weight: 600;
-          color: var(--gray_color);
+          color: var(--white_color);
           @extend%trans4;
           &:hover{
-            color: var(--white_color);
+            color: var(--light_color);
           }
         }
       }

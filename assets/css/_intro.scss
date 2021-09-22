@@ -1,12 +1,12 @@
 .intro-section{
   position: relative;
   padding: 180px 0 307px;
-  background-image: url('../img/back\ line.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -123px;
   z-index: 1;
+  background: var(--back_gradied);
   &:after{
     position: absolute;
     content: "";
