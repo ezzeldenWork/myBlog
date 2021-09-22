@@ -1,0 +1,12 @@
+.footer_section{
+  padding: 20px 0;
+  background-color: var(--min_color);
+  .footer_p{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white_color);
+    a{
+      color: var(--light_color);
+    }
+  }
+}

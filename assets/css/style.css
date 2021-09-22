@@ -324,6 +324,21 @@ html[dir="ltr"] body {
   border-radius: 5px;
 }
 
+.footer_section {
+  padding: 20px 0;
+  background-color: var(--min_color);
+}
+
+.footer_section .footer_p {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white_color);
+}
+
+.footer_section .footer_p a {
+  color: var(--light_color);
+}
+
 .ez_header .nav_list ul li a, .section_style .section-title-box .more_link, .section_style .section-title-box .quot_relode i, .course_box .cours_link .cours_title {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
