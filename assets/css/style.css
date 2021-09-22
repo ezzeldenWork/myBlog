@@ -168,6 +168,10 @@ html[dir="ltr"] body {
   overflow: hidden;
 }
 
+.course_box.wating_box {
+  cursor: wait;
+}
+
 .course_box.wating_box:after, .course_box.wating_box::before {
   position: absolute;
 }

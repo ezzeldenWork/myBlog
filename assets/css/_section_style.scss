@@ -38,6 +38,7 @@
   z-index: 1;
   overflow: hidden;
   &.wating_box {
+    cursor: wait;
     &:after,
     &::before {
       position: absolute;
