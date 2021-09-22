@@ -80,3 +80,23 @@
     }
   }
 }
+
+
+
+// qout_box
+
+.qout_box{
+  text-align: center;
+  .quot_prag{
+    font-size: 24px;
+    font-weight: bold;
+    width: 75%;
+    margin: 0  auto 10px;
+    color: var(--min_color);
+  }
+  .quot_auther{
+    font-size: 20px;
+    font-weight: 550;
+    color: avr(--middel_color);
+  }
+}
