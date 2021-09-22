@@ -200,6 +200,11 @@ html[dir="ltr"] body {
   cursor: pointer;
 }
 
+.section_style .section-title-box .quot_relode:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .course_box {
   padding: 20px;
   margin: 10px 0;
@@ -319,12 +324,7 @@ html[dir="ltr"] body {
   border-radius: 5px;
 }
 
-.ez_header .nav_list ul li a, .section_style .section-title-box .more_link, .course_box .cours_link .cours_title {
+.ez_header .nav_list ul li a, .section_style .section-title-box .more_link, .section_style .section-title-box .quot_relode i, .course_box .cours_link .cours_title {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
-}
-
-.section_style .section-title-box .quot_relode i {
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out;
 }
