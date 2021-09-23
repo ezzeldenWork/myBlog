@@ -1,12 +1,55 @@
 .footer_section{
   padding: 20px 0;
   background-color: var(--min_color);
+  margin: 40px 0 0 ;
   .footer_p{
     font-size: 20px;
     font-weight: bold;
     color: var(--white_color);
     a{
       color: var(--light_color);
+    }
+  }
+  .footer_ul{
+    ul{
+      display: flex;
+      li{
+        margin: 0 10px;
+        a{
+          display: block;
+          position: relative;
+          width: 50px;
+          height: 50px;
+          img{
+            width: 50px;
+            position: absolute;
+            height: 50px;
+            @extend%trans4;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            object-fit: cover;
+            &.side_img{
+              opacity: 1;
+              
+            }
+            &.face_img{
+              opacity: 0;
+            }
+          }
+          &:hover{
+            img{
+              &.side_img{
+                opacity: 0;
+                
+              }
+              &.face_img{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

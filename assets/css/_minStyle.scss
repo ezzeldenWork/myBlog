@@ -16,7 +16,14 @@ a {
     }
 }
 
+*{
+    @extend%trans4;
+}
+
 html{
+    body{
+        background-color: var(--body_color);
+    }
     &[dir="rtl"]{
         body{
             font-family: var(--ar_word);
@@ -30,6 +37,46 @@ html{
 }
 
 
+
 .en_word{
     font-family: var(--en_word);
+}
+
+.color_box{
+    padding: 20px;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    background-color: var(--body_color);
+    z-index: 888;
+    border-radius: 10px 0 0  10px  ;
+    box-shadow: 0px 2px 3px rgba(#000000,0.1);
+    ul{
+        display: flex;
+        li{ 
+            margin: 0 10px 0;
+            span{
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                &.min_theme{
+                background: var(--back_gradied_min);
+                }
+                &.orange_theme{
+                background: var(--back_gradied_orang);
+                }
+                &.gray_theme{
+                background: var(--back_gradied_gary);
+                }
+                &.pink_theme{
+                background: var(--back_gradied_pink);
+                }
+                &.dark_theme{
+                background: var(--back_gradied_dark);
+                }
+            }
+        }
+    }
 }

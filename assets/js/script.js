@@ -13,4 +13,12 @@ $(document).ready(function () {
   $(".quot_relode").click(function () {
     runApi();
   });
+
+
+  $(".color_box ul li span").click(function(){
+    const theme_color = $(this).data("color");
+    $("html").attr('data-theme',theme_color)
+  })
+
+
 });

@@ -1,20 +1,67 @@
 :root {
   --white_color: #fff;
   --black_color: #000;
-  --min_color: #003B73;
-  --sub_color: #60A3D9;
-  --middel_color:#0074B7;
-  --light_color:#BFD7ED;
-  --gray_color:#f8f6f6;
-
-
+  --min_color: #003b73;
+  --sub_color: #60a3d9;
+  --middel_color: #0074b7;
+  --light_color: #bfd7ed;
+  --gray_color: #f8f6f6;
+  --body_color: #fff;
 
   // backGround
-  --back_gradied:radial-gradient(circle, rgba(40,94,143,1) 0%, rgba(0,59,115,1) 100%);
+  --back_gradied: radial-gradient(
+    circle,
+    rgba(40, 94, 143, 1) 0%,
+    rgba(0, 59, 115, 1) 100%
+  );
 
+  --en_word: "Josefin Sans", sans-serif;
+  --ar_word: "Cairo", sans-serif;
 
-  --en_word:'Josefin Sans', sans-serif;
-  --ar_word:'Cairo', sans-serif;
-
+  // themes
+  --back_gradied_min: linear-gradient(180deg, rgba(40, 94, 143, 1) 0%, rgba(0, 59, 115, 1) 100%);
+  --back_gradied_orang: linear-gradient(180deg, #f67b50 0%, #a82810 100%);
+  --back_gradied_gary: linear-gradient(180deg, #b9b7bd 0%, #868b8e 100%);
+  --back_gradied_pink: linear-gradient(180deg, #fb6b90 0%, #fb4570 100%);
+  --back_gradied_dark: linear-gradient(180deg, #747474 0%, #444444 100%);
 }
 
+html {
+  &[data-theme="orange"] {
+    --min_color: #a82810;
+    --sub_color: #c0956c;
+    --middel_color: #f67b50;
+    --light_color: #fbaa60;
+    --gray_color: #ddd;
+    // backGround
+    --back_gradied: radial-gradient(circle, #f67b50 0%, #a82810 100%);
+  }
+  &[data-theme="gray"] {
+    --min_color: #868b8e;
+    --sub_color: #b9b7bd;
+    --middel_color: #747474;
+    --light_color: #cacac9;
+    --gray_color: #eee;
+    // backGround
+    --back_gradied: radial-gradient(circle, #b9b7bd 0%, #868b8e 100%);
+  }
+  &[data-theme="pink"] {
+    --min_color: #fb4570;
+    --sub_color: #fb8da0;
+    --middel_color: #fb6b90;
+    --light_color: #ffc6d4;
+    --gray_color: #eee;
+    // backGround
+    --back_gradied: radial-gradient(circle, #fb6b90 0%, #fb4570 100%);
+  }
+  &[data-theme="dark"] {
+    --min_color: #0a0708;
+    --sub_color: #747474;
+    --middel_color: #444444;
+    --light_color: #8d8d8d;
+    --gray_color: rgba(51, 51, 51, 0.192);
+    // backGround
+    --back_gradied: radial-gradient(circle, #747474 0%, #444444 100%);
+    --body_color: #b1b1b1;
+  }
+}
