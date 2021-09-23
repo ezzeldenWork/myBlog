@@ -20,5 +20,8 @@ $(document).ready(function () {
     $("html").attr('data-theme',theme_color)
   })
 
+  $(".color_box .opne_icon").click(function(){
+    $(".color_box").toggleClass("color_box--opne")
+  })
 
 });

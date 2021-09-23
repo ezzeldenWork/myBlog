@@ -98,12 +98,31 @@ html[dir="ltr"] body {
   padding: 20px;
   position: fixed;
   top: 150px;
-  right: 0;
+  right: -290px;
   background-color: var(--body_color);
   z-index: 888;
-  border-radius: 10px 0 0  10px;
+  border-radius: 0 0 0 10px;
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.color_box--opne {
+  right: 0;
+}
+
+.color_box .opne_icon {
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: -36px;
+  background-color: var(--body_color);
+  border-radius: 10px 0 0 10px;
+}
+
+.color_box .opne_icon i {
+  -webkit-animation: sittingscroll 5s forwards infinite ease-in-out;
+          animation: sittingscroll 5s forwards infinite ease-in-out;
 }
 
 .color_box ul {
@@ -142,6 +161,28 @@ html[dir="ltr"] body {
 
 .color_box ul li span.dark_theme {
   background: var(--back_gradied_dark);
+}
+
+@-webkit-keyframes sittingscroll {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes sittingscroll {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .ez_header {
@@ -397,6 +438,14 @@ html[data-theme="dark"] .intro-section:after {
   border-radius: 5px;
   background-color: var(--gray_color);
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .blog_box img {
@@ -422,6 +471,7 @@ html[data-theme="dark"] .intro-section:after {
 }
 
 .blog_box .read_box .blog_read_link {
+  display: inline-block;
   font-size: 16px;
   font-weight: bold;
   padding: 4px 10px;
@@ -429,6 +479,10 @@ html[data-theme="dark"] .intro-section:after {
   background-color: var(--middel_color);
   border-radius: inherit;
   border-radius: 5px;
+}
+
+.blog_box .read_box .blog_read_link:hover {
+  background-color: var(--black_color);
 }
 
 .footer_section {
@@ -492,7 +546,7 @@ html[data-theme="dark"] .intro-section:after {
   opacity: 1;
 }
 
-*, .ez_header .nav_list ul li a, .section_style .section-title-box .more_link, .section_style .section-title-box .quot_relode i, .course_box .cours_link .cours_title, .footer_section .footer_ul ul li a img {
+*, .ez_header .nav_list ul li a, .section_style .section-title-box .more_link, .section_style .section-title-box .quot_relode i, .course_box .cours_link .cours_title, .blog_box .read_box .blog_read_link, .footer_section .footer_ul ul li a img {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
