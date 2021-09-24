@@ -1,0 +1,20 @@
+.min_color_svg {
+  fill: var(--middel_color);
+}
+
+.gray_color_svg {
+  fill: var(--gray_color);
+}
+
+.sulod_sun {
+  .sun_wendo {
+    transform-box: fill-box;
+    transform: translate(11px, 0px) rotate(0deg);
+    fill: var(--sun_color);
+  }
+  &--animation {
+    .sun_wendo {
+      transform: translate(11px, 0px) rotate(-136deg);
+    }
+  }
+}
