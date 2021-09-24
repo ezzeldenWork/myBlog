@@ -49,10 +49,11 @@ html {
   z-index: 888;
   border-radius: 0 0 0 10px;
   box-shadow: 0px 2px 3px rgba(#000000, 0.1);
-  &--opne{
+  &--opne {
     right: 0;
   }
   .opne_icon {
+    box-shadow: -2px 2px 2px rgba(#000000, 0.1);
     cursor: pointer;
     padding: 10px;
     position: absolute;

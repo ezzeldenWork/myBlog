@@ -120,6 +120,8 @@ html[dir="ltr"] body {
 }
 
 .color_box .opne_icon {
+  -webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   padding: 10px;
   position: absolute;
@@ -492,6 +494,41 @@ html[data-theme="dark"] .intro-section:after {
 
 .blog_box .read_box .blog_read_link:hover {
   background-color: var(--black_color);
+}
+
+.list_home_box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list_home_box ul li {
+  margin: 0 0 40px;
+  position: relative;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.list_home_box ul li::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 2px;
+  background-color: var(--min_color);
+  top: 0;
+  right: 0;
+}
+
+.list_home_box ul li .title {
+  font-size: 14px;
+  font-weight: 550;
+  color: var(--middel_color);
+  padding: 0 0 5px;
+}
+
+.list_home_box ul li .prag {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--min_color);
 }
 
 .footer_section {

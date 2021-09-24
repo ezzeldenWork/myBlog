@@ -1,0 +1,31 @@
+.list_home_box {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 0 0 40px;
+      position: relative;
+      padding-inline-start:20px ;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 2px;
+        background-color: var(--min_color);
+        top: 0;
+        right: 0;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: 550;
+        color: var(--middel_color);
+        padding: 0 0 5px;
+      }
+      .prag {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--min_color);
+      }
+    }
+  }
+}

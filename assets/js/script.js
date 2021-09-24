@@ -1,12 +1,15 @@
+
+const quotApi = "./assets/quots/quots.json",
+  runApi = () => {
+    $.getJSON(quotApi, function (data) {
+      const randQuot = data[Math.floor(Math.random() * data.length)];
+      $(".qout_box .quot_prag").text(randQuot.quot);
+      $(".qout_box .quot_auther").text(randQuot.name);
+    });
+  };
+
 $(document).ready(function () {
-  const quotApi = "./assets/quots/quots.json",
-    runApi = () => {
-      $.getJSON(quotApi, function (data) {
-        const randQuot = data[Math.floor(Math.random() * data.length)];
-        $(".qout_box .quot_prag").text(randQuot.quot);
-        $(".qout_box .quot_auther").text(randQuot.name);
-      });
-    };
+
 
   runApi();
 
@@ -25,7 +28,7 @@ $(document).ready(function () {
     const theme_color = $(this).data("color");
     $("html").attr('data-theme', theme_color);
     $(".sulod_sun").addClass("sulod_sun--animation");
-    setTimeout(function () { 
+    setTimeout(function () {
       $(".sulod_sun").removeClass("sulod_sun--animation");
     }, 1500);
   })
