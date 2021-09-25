@@ -44,13 +44,13 @@ html {
   padding: 20px;
   position: fixed;
   top: 150px;
-  right: -290px;
   background-color: var(--white_color);
   z-index: 888;
   border-radius: 0 0 0 10px;
   box-shadow: 0px 2px 3px rgba(#000000, 0.1);
+  right: -290px;
   &--opne {
-    right: 0;
+    right: 0 !important;
   }
   .opne_icon {
     box-shadow: -2px 2px 2px rgba(#000000, 0.1);

@@ -1,33 +1,42 @@
-.ez_header{
+.ez_header {
   position: relative;
   padding: 20px 0;
   border-bottom: 1px solid var(--middel_color);
   z-index: 2;
-  .logo_box{
-    a{
+  .logo_box {
+    a {
       display: inline-block;
-      img{
+      img {
         height: 80px;
       }
     }
   }
-  .nav_list{
-    ul{
+  .nav_list {
+    ul {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      li{
+      li {
         padding: 0 10px;
-        a{
+        a {
           font-size: 20px;
           font-weight: 600;
           color: var(--white_color);
           @extend%trans4;
-          &:hover{
+          &:hover {
             color: var(--light_color);
           }
         }
       }
+    }
+  }
+
+  .opne_nav {
+    display: none;
+    i {
+      font-size: 22px;
+      color: var(--white_color);
+      cursor: pointer;
     }
   }
 }

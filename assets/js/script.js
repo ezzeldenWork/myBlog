@@ -13,6 +13,14 @@ $(document).ready(function () {
 
   runApi();
 
+  // body Click
+
+  $("body").click(function () {
+    $(".color_box").removeClass("color_box--opne");
+  })
+
+
+  // random the quot
   $(".quot_relode").click(function () {
     runApi();
   });
@@ -40,12 +48,5 @@ $(document).ready(function () {
     const theme_color = $(this).attr("class");
     $("html").attr('data-font', theme_color);
   });
-
-  // body Click
-
-  $("body").click(function () {
-    $(".color_box").removeClass("color_box--opne");
-  })
-
-
+  
 });
