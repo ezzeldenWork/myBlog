@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Changa:wght@200;300;400;500;600;700;800&family=Markazi+Text:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 :root {
   --white_color: #fff;
   --black_color: #000;
@@ -15,7 +15,11 @@
     rgba(0, 59, 115, 1) 100%
   );
   --en_word: "Josefin Sans", sans-serif;
-  --ar_word: "Cairo", sans-serif;
+  --Tajawal_font: "Tajawal", sans-serif;
+  --Noto_font: "Noto Sans Arabic", sans-serif;
+  --Markazi_font: "Markazi Text", serif;
+  --Changa_font: "Changa", sans-serif;
+  --Cairo_font: "Cairo", sans-serif;
   --back_gradied_min: linear-gradient(
     180deg,
     rgba(40, 94, 143, 1) 0%,
@@ -68,6 +72,26 @@ html[data-theme="dark"] {
   --body_color: #b1b1b1;
 }
 
+html[data-font="tajawal"] {
+  font-family: var(--Tajawal_font);
+}
+
+html[data-font="noto"] {
+  font-family: var(--Noto_font);
+}
+
+html[data-font="markazi"] {
+  font-family: var(--Markazi_font);
+}
+
+html[data-font="changa"] {
+  font-family: var(--Changa_font);
+}
+
+html[data-font="cairo"] {
+  font-family: var(--Cairo_font);
+}
+
 p,
 ul,
 h1,
@@ -108,7 +132,7 @@ html[dir="ltr"] body {
   position: fixed;
   top: 150px;
   right: -290px;
-  background-color: var(--body_color);
+  background-color: var(--white_color);
   z-index: 888;
   border-radius: 0 0 0 10px;
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
@@ -136,17 +160,17 @@ html[dir="ltr"] body {
           animation: sittingscroll 5s forwards infinite ease-in-out;
 }
 
-.color_box ul {
+.color_box .color-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.color_box ul li {
+.color_box .color-list li {
   margin: 0 10px 0;
 }
 
-.color_box ul li span {
+.color_box .color-list li span {
   display: block;
   width: 30px;
   height: 30px;
@@ -154,24 +178,85 @@ html[dir="ltr"] body {
   cursor: pointer;
 }
 
-.color_box ul li span.min_theme {
+.color_box .color-list li span.min_theme {
   background: var(--back_gradied_min);
 }
 
-.color_box ul li span.orange_theme {
+.color_box .color-list li span.orange_theme {
   background: var(--back_gradied_orang);
 }
 
-.color_box ul li span.gray_theme {
+.color_box .color-list li span.gray_theme {
   background: var(--back_gradied_gary);
 }
 
-.color_box ul li span.pink_theme {
+.color_box .color-list li span.pink_theme {
   background: var(--back_gradied_pink);
 }
 
-.color_box ul li span.dark_theme {
+.color_box .color-list li span.dark_theme {
   background: var(--back_gradied_dark);
+}
+
+.color_box .font_list {
+  display: block;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(51, 51, 51, 0.116);
+  margin: 20px 0 0;
+}
+
+.color_box .font_list .list_title_font {
+  margin: 0 0  10px;
+  display: block;
+  font-size: 20px;
+  color: var(--middel_color);
+}
+
+.color_box .font_list li {
+  font-size: 16px;
+  font-weight: 550;
+  color: var(--min_color);
+  padding-block: 6px;
+  cursor: pointer;
+  position: relative;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.color_box .font_list li:hover {
+  color: var(--middel_color);
+}
+
+.color_box .font_list li::after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: var(--min_color);
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.color_box .font_list li.cairo {
+  font-family: var(--Tajawal_font);
+}
+
+.color_box .font_list li.tajawal {
+  font-family: var(--Noto_font);
+}
+
+.color_box .font_list li.noto {
+  font-family: var(--Markazi_font);
+}
+
+.color_box .font_list li.markazi {
+  font-family: var(--Changa_font);
+}
+
+.color_box .font_list li.changa {
+  font-family: var(--Cairo_font);
 }
 
 @-webkit-keyframes sittingscroll {
@@ -418,6 +503,7 @@ html[data-theme="dark"] .intro-section:after {
   font-weight: bold;
   text-transform: capitalize;
   color: var(--middel_color);
+  font-family: var(--en_word);
 }
 
 .course_box .cours_link .cours_title:hover {

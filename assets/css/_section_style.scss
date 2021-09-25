@@ -113,6 +113,7 @@
       font-weight: bold;
       text-transform: capitalize;
       color: var(--middel_color);
+      font-family:  var(--en_word);
       @extend%trans4;
       &:hover {
         color: var(--min_color);

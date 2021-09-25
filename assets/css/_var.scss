@@ -17,7 +17,15 @@
   );
 
   --en_word: "Josefin Sans", sans-serif;
-  --ar_word: "Cairo", sans-serif;
+  // --ar_word: "Cairo", sans-serif;
+
+  // fonsts
+
+  --Tajawal_font: "Tajawal", sans-serif;
+  --Noto_font: "Noto Sans Arabic", sans-serif;
+  --Markazi_font: "Markazi Text", serif;
+  --Changa_font: "Changa", sans-serif;
+  --Cairo_font: "Cairo", sans-serif;
 
   // themes
   --back_gradied_min: linear-gradient(
@@ -72,5 +80,21 @@ html {
     // backGround
     --back_gradied: radial-gradient(circle, #747474 0%, #444444 100%);
     --body_color: #b1b1b1;
+  }
+
+  &[data-font="tajawal"] {
+    font-family: var(--Tajawal_font);
+  }
+  &[data-font="noto"] {
+    font-family: var(--Noto_font);
+  }
+  &[data-font="markazi"] {
+    font-family: var(--Markazi_font);
+  }
+  &[data-font="changa"] {
+    font-family: var(--Changa_font);
+  }
+  &[data-font="cairo"] {
+    font-family: var(--Cairo_font);
   }
 }
