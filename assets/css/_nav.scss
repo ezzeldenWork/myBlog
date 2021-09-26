@@ -49,6 +49,15 @@
   }
 }
 
+body {
+  &.sub_page {
+    .ez_header {
+      background-color: var(--min_color);
+      border-bottom:0;
+    }
+  }
+}
+
 // mediastyle
 @media (max-width: 772px) {
   .ez_header {
