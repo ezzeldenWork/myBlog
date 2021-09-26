@@ -48,5 +48,12 @@ $(document).ready(function () {
     const theme_color = $(this).attr("class");
     $("html").attr('data-font', theme_color);
   });
+
+
+  // opne Menu
+  $(".ez_header .opne_icon i").click(function (e) { 
+    e.preventDefault();
+    $(".ez_header .nav_list").slideToggle()
+  });
   
 });

@@ -5,7 +5,7 @@
     li {
       margin: 0 0 40px;
       position: relative;
-      padding-inline-start:20px ;
+      padding-inline-start: 20px;
       &::after {
         position: absolute;
         content: "";
@@ -25,6 +25,18 @@
         font-size: 20px;
         font-weight: bold;
         color: var(--min_color);
+      }
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .list_home_box {
+    ul {
+      li {
+        .prag {
+          font-size: 18px;
+        }
       }
     }
   }
